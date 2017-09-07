@@ -1,0 +1,5 @@
+{
+  "root": {
+    "ERR_ARITY_ARGS": "First argument to _arity must be a non-negative integer no greater than ten"
+  }
+}

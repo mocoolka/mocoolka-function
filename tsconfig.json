@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es2015","es2016"],
+    "outDir": "lib",
+    "allowJs":false,
+    "declaration": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "removeComments": false,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "tests",
+    "lib",
+    "lib-umd",
+    "examples",
+    "history",
+    "coverage"
+  ]
+}
