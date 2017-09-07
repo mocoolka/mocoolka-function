@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;toString&quot; | mocoolka-function</title>
+	<title>&quot;unless&quot; | mocoolka-function</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_tostring_.html">&quot;toString&quot;</a>
+					<a href="_unless_.html">&quot;unless&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;toString&quot;</h1>
+			<h1>External module &quot;unless&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tostring_.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_unless_.html#unless" class="tsd-kind-icon">unless</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,30 +82,57 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="tostring" class="tsd-anchor"></a>
-					<h3>to<wbr>String</h3>
+					<a name="unless" class="tsd-anchor"></a>
+					<h3>unless</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span>fn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">unless<span class="tsd-signature-symbol">(</span>pred<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, whenFalseFn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mocoolka/mocoolka-function/blob/4f1b8a8/src/toString.ts#L7">toString.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/mocoolka/mocoolka-function/blob/4f1b8a8/src/unless.ts#L22">unless.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Convert a function to string</p>
+									<p>Tests the final argument by passing it to the given predicate function. If
+										the predicate is not satisfied, the function will return the result of
+										calling the <code>whenFalseFn</code> function with the same argument. If the predicate
+									is satisfied, the argument is returned as is.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>fn: <span class="tsd-signature-type">Function</span></h5>
+									<h5>pred: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>A predicate function</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>whenFalseFn: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>A function to invoke when the <code>pred</code> evaluates
+											to a falsy value.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>x: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>An object to test with the <code>pred</code> function and
+											pass to <code>whenFalseFn</code> if necessary.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<p>Either <code>x</code> or the result of applying <code>x</code> to <code>whenFalseFn</code>.</p>
 						</li>
 					</ul>
 				</section>
@@ -183,10 +210,10 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_symbols_.html">"symbols"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_tostring_.html">"to<wbr>String"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="_unless_.html">"unless"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -197,7 +224,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_tostring_.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+						<a href="_unless_.html#unless" class="tsd-kind-icon">unless</a>
 					</li>
 				</ul>
 			</nav>
