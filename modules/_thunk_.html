@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;not&quot; | mocoolka-function</title>
+	<title>&quot;thunk&quot; | mocoolka-function</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_not_.html">&quot;not&quot;</a>
+					<a href="_thunk_.html">&quot;thunk&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;not&quot;</h1>
+			<h1>External module &quot;thunk&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_not_.html#not" class="tsd-kind-icon">not</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_thunk_.html#thunk" class="tsd-kind-icon">thunk</a></li>
 							</ul>
 						</section>
 					</div>
@@ -81,38 +81,43 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="not" class="tsd-anchor"></a>
-					<h3>not</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">not<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="thunk" class="tsd-anchor"></a>
+					<h3>thunk</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">thunk&lt;T&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span>, context<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, resolver<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mocoolka/mocoolka-function/blob/4f1b8a8/src/not.ts#L16">not.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/mocoolka/mocoolka-function/blob/4f1b8a8/src/thunk.ts#L8">thunk.ts:8</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>A function that returns the <code>!</code> of its argument. It will return <code>true</code> when
-									passed false-y value, and <code>false</code> when passed a truth-y one.</p>
+									<p>The convert callback function to promise function</p>
 								</div>
 							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>a: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>any value</p>
-										</div>
-									</div>
+									<h5>target: <span class="tsd-signature-type">Function</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> context: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> resolver: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">function</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p>the logical inverse of passed argument.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -125,14 +130,14 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_not_.html">"not"</a>
+						<a href="_thunk_.html">"thunk"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_not_.html#not" class="tsd-kind-icon">not</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_thunk_.html#thunk" class="tsd-kind-icon">thunk</a>
 					</li>
 				</ul>
 			</nav>
